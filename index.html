@@ -111,7 +111,7 @@ nav a:hover::after{width:100%}
 .hero h1 em{font-style:italic;color:var(--brass-lt)}
 .hero p{color:rgba(255,255,255,.74);font-size:clamp(16px,1.6vw,19px);max-width:54ch;margin-bottom:14px}
 .hero-price{display:inline-flex;align-items:baseline;gap:10px;margin:22px 0 34px;padding:12px 20px;border:1px solid rgba(212,180,131,.4);background:rgba(212,180,131,.09);border-radius:var(--r)}
-.hero-price b{font-family:var(--serif);font-size:28px;color:var(--brass-lt);font-weight:400}
+.hero-price b{font-family:var(--serif);font-size:28px;color:var(--brass-lt);font-weight:400;white-space:nowrap}
 .hero-price small{font-size:12.5px;color:rgba(255,255,255,.62);letter-spacing:.03em}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
 .hero-note{font-size:12.5px;color:rgba(255,255,255,.5);margin-top:20px;display:flex;align-items:center;gap:8px}
@@ -329,6 +329,7 @@ footer a:hover{color:var(--brass-lt)}
   .f-top{grid-template-columns:1fr}
   .cfg-sticky{position:static}
   .seg{grid-template-columns:1fr}
+  .hero-price{flex-direction:column;align-items:flex-start;gap:8px;padding:16px 20px}
 }
 </style>
 </head>
